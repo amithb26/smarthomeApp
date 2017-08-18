@@ -20,14 +20,14 @@ from sht21 import SHT21
 LOG_FILENAME = 'HelloIoTBluemix.log'
 logging.basicConfig(filename=LOG_FILENAME,level=logging.DEBUG,format='%(asctime)s, %(levelname)s, %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
-account_sid = ""  # Enter your account sid
-auth_token  = ""  # Enter your auth token
+account_sid = "ACbbc1eadf2790da1085f3dd9047b52c11"  # Enter your account sid
+auth_token  = "bd2d286f6d354bbe218ebf5b8a0fb0fb"  # Enter your auth token
 
 twilioClient = Client(account_sid, auth_token)
 
-twilionumber = "" # Your Twilio phone Number you will get it while registration
-receivernumber = "" #Your verified phone number
-
+twilionumber = "+14246108493" # Your Twilio phone Number you will get it while registration
+receivernumber = "+91 97397 58820" #Your verified phone number
+ 
 # GPIO set as input that can be used to disable sensor readings
 # (0 means readings enabled, 1 means readings disabled)
 SENSOR_DISABLE = 14
@@ -150,8 +150,8 @@ def init():
 	
 	# Enter the autkey and authToken(These you will when you generate the api keys)
 	
-	authKey = "" #API key (required if auth-method is apikey).
-	authToken = ""#API key token (required if auth-method is apikey).
+	authKey = "a-o15j1s-wwlr9tbpwp" #API key (required if auth-method is apikey).
+	authToken = "87+21Y8OxG(2uHbdIX"#API key token (required if auth-method is apikey).
 	
 	try:
 		# options require for the connection
