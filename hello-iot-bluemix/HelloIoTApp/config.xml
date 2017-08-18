@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!--All configuration contents are wrapped in <widget> tag.
+    id is your reserved app-id on various app stores\
+    version number of app in x.y.z format where (x,y,z) are positive integers i.    e. 1.0.0, it represents major.minor.patch version system. -->
+
+<widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+<!--This is the name of the app, which will be displayed below the app icon on the mobile screen.-->
+
+    <name>Smart Home</name>
+
+<!--This is a brief description of what the app is about, and what it is-->
+
+    <description>
+    This application reads temerature and humidity sensor values and performs ne    cessary action 
+    </description>
+
+<!--This field contains name of the creator or programmer, generally set to the name of organization which is launching this app.-->
+
+    <author email="payal.jain@cloud-quotient.com" href="http://www.cloud-quotient.com/">
+        Cloud-quotient Technologies
+    </author>
+
+<!--Defines the app's starting page in the top-level web assets directory.-->
+
+    <content src="index.html" />
+
+<!--Defines the set of external domains the app is allowed to communicate with
+    Don't block any requests(*) -->
+    <access origin="*" />
+
+<!--Controls which URLs the app is allowed to ask the system to open.
+    Allow links to web pages to open in a browser -->
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+
+<!-- Allow tel: links to open the dialer -->
+    <allow-intent href="tel:*" />
+
+<!-- Allow SMS links to open messaging app -->
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+
+<!-- Allow geo: links to open maps -->
+    <allow-intent href="geo:*" />
+
+<!--When using the CLI to build applications, it is sometimes necessary to speci    fy preferences or other elements specific to a particular platform.-->
+
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+
+<!--Specifies details about what platform to restore during a prepare.
+    name(string) : Name of the platform to be restored
+    spec(string) : Details about the platform to be restored. This could be a ma    jor.minor.patch version number, a directory containing the platform or a url    pointing to a git repository.-->
+    <engine name="android" spec="~6.2.3" />
+    <engine name="browser" spec="^4.1.0" />
+
+<!--Specifies details about what plugin to restore during a prepare.
+    name(string) : Name of the plugin to be restored
+    spec(string) : Details about the plugin to be restored-->
+
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
+
+</widget>
+
