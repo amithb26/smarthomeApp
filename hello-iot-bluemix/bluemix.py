@@ -143,7 +143,7 @@ Parameters 		:	-
 def init():
 	global client,deviceType
 	# Enter your organizations ID
-	organization = "" #Your organization ID
+	organization = "o15j1s" #Your organization ID
 	
 	appId = "RASPBERRY_PI_001"   # The IBM Bluemix device you've created
 	authMethod = "apikey" #Method of authentication (the only value currently supported is apikey)
